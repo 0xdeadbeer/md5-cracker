@@ -27,6 +27,7 @@ def clearTerminal():
 		os.system("clear")
 
 def showBanner():
+	clearTerminal()
 	print ("MD5 Decoder")
 	print ("Coded by: MrYes2020")
 	print ("Usage: ./md5_decoder.py [hash] [wordlist file]")
@@ -41,5 +42,6 @@ def main():
 		crackit(hash, file)
 	else:
 		showBanner()
-main()
+if __name__ == "__main__":
+	main()
 
